@@ -485,7 +485,7 @@ section,
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   line-height: 1;
-  margin-right: 20px;
+  margin: 8px;
   transition: 0.3s;
 }
 
