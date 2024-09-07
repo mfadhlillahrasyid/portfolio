@@ -285,7 +285,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #ff7b00;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -299,7 +299,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: #b35600;
   color: var(--contrast-color);
 }
 
@@ -591,7 +591,8 @@ section,
 
 @media (max-width: 768px) {
   .hero2 h2 {
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .hero2 p {
@@ -913,7 +914,7 @@ section,
 
 .portfolio .testimonial-item p {
   margin: 15px auto 15px auto;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 300;
   color: #8a8a8a;
 }
@@ -923,7 +924,7 @@ section,
 }
 
 .portfolio .swiper {
-  padding: 0 360px;
+  padding: 0 250px;
 }
 
 .portfolio .container-fluid {
@@ -937,6 +938,10 @@ section,
 
   .portfolio .container-fluid {
     padding: 0;
+  }
+
+  .portfolio .testimonial-item p {
+    font-size: 15px;
   }
 }
 
@@ -952,6 +957,10 @@ section,
   border: 1px solid #0f0f0f;
 }
 
+.services .service-item:hover {
+  border: 1px solid #252525;
+}
+
 .services .service-item .icon {
   margin: 0 auto;
   width: 100px;
@@ -965,7 +974,7 @@ section,
   filter: grayscale(100%);
 }
 
-.services .service-item .icon:hover {
+.services .service-item:hover .icon {
   filter: none;
 }
 
@@ -1086,8 +1095,13 @@ section,
   height: 100%;
   padding: 50px;
   transition: 0.3s;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   display: flex;
+  border: 1px solid #181818a2;
+}
+
+.experience .service-item:hover {
+  border: 1px solid #b35600;
 }
 
 .experience .service-item .icon {
