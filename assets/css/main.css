@@ -506,6 +506,10 @@ section,
     margin: 0;
     border-radius: 0;
   }
+
+  .hero .social-links a {
+    font-size: 22px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -946,6 +950,15 @@ section,
 
   .portfolio .testimonial-item p {
     font-size: 15px;
+  }
+
+  .portfolio .testimonial-item h3 {
+    font-size: 20px;
+  }
+
+  .portfolio .testimonial-item h4 {
+    font-size: 15px;
+    font-weight: 400;
   }
 }
 
