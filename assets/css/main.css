@@ -288,6 +288,16 @@ h6 {
   justify-content: center;
 }
 
+.lumia:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  /* margin: 50px;
+  border-radius: 3rem; */
+}
+
 .lumia img {
   position: absolute;
   inset: 0;
@@ -528,8 +538,8 @@ section,
   position: absolute;
   inset: 0;
   z-index: 2;
-  margin: 50px;
-  border-radius: 3rem;
+  /* margin: 50px;
+  border-radius: 3rem; */
 }
 
 .hero .container {
@@ -723,6 +733,10 @@ section,
 }
 
 @media (max-width: 720px) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .about .content p {
     font-size: 18px;
   }
@@ -973,6 +987,13 @@ section,
   position: relative;
   height: 100%;
   border-radius: 1rem;
+  transition: 0.3s;
+  transform: scale(0.98);
+}
+
+.portfolio .testimonial-item:hover {
+  transform: scale(1);
+  transition: 0.3s;
 }
 
 .portfolio .testimonial-item img {
@@ -1293,6 +1314,10 @@ section,
 }
 
 @media (max-width: 720px) {
+  .experience {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .experience .service-item h3 {
     color: color-mix(in srgb, var(--heading-color), transparent 25%);
     font-weight: 700;
