@@ -547,7 +547,7 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
+.hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -581,7 +581,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 50px;
   }
 
@@ -1189,9 +1189,25 @@ section,
   fill: #f3268c;
 }
 
+.services .responsive .swiper-wrapper {
+  height: auto;
+}
+
+.services .responsive .swiper {
+  padding: 0 30px;
+}
+
+.services .responsive .container-fluid {
+  padding: 0;
+}
+
 @media (max-width: 720px) {
   .services .service-item .icon {
     max-width: 40px;
+  }
+
+  .services .responsive {
+    padding: 0;
   }
 
   .services .service-item h3 {

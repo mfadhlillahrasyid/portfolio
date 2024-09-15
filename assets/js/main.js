@@ -220,6 +220,31 @@
     },
   });
 
+  new Swiper(".services-slider", {
+    loop: false,
+    speed: 1000,
+    allowTouchMove: true,
+    autoplay: false,
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        centeredSlides: false,
+      },
+      1200: {
+        slidesPerView: 3.3,
+        spaceBetween: 10,
+        centeredSlides: false,
+      },
+    },
+  });
+
   window.addEventListener("load", initSwiper);
 
   /**
