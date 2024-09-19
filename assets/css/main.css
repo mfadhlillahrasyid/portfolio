@@ -8,7 +8,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #ff7b00; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -16,11 +16,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #45505b; /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #ff7b00; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #ff7b00; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -880,9 +880,12 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.portfolio {
+  margin: 0 40px;
+}
 .portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
+  padding: 10px;
+  margin: 0 auto 40px auto;
   list-style: none;
   text-align: center;
 }
@@ -890,21 +893,22 @@ section,
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
+  padding: 20px;
   margin: 0;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
-  margin-bottom: 5px;
-  border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
+  font-family: var(--nav-font);
+  border-radius: 9px;
+  border: 1px solid var(--nav-dropdown-color);
 }
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -927,6 +931,36 @@ section,
   overflow: hidden;
 }
 
+.portfolio .portfolio-item img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.portfolio .portfolio-item .portfolio-details {
+  background: #0f0f0f;
+  border-radius: 0 0 1rem 1rem;
+  padding: 25px;
+}
+
+.portfolio .portfolio-item .portfolio-details h4 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+.portfolio .badge {
+  background-color: #2e2e2e;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.portfolio .badge:hover {
+  color: #060606;
+  background-color: var(--accent-color);
+  transition: 0.3s;
+  font-weight: 500;
+}
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
@@ -939,17 +973,13 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
+.portfolio .portfolio-item .portfolio-details p {
+  color: color-mix(in srgb, var(--default-color), transparent 65%);
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  margin-right: 20px;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -968,9 +998,9 @@ section,
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.portfolio .portfolio-item .portfolio-details .details-link {
   right: 14px;
-  font-size: 28px;
+  font-size: 16px;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -1038,6 +1068,10 @@ section,
 }
 
 @media (max-width: 720px) {
+  .portfolio {
+    margin: 0;
+  }
+
   .portfolio .swiper {
     padding: 0 20px;
   }
