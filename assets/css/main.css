@@ -79,6 +79,11 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  max-width: 13px;
+}
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -929,6 +934,13 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
+  transform: scale(0.99);
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-item:hover {
+  transform: scale(1);
+  transition: 0.3s;
 }
 
 .portfolio .portfolio-item img {
@@ -949,10 +961,11 @@ section,
 
 .portfolio .badge {
   background-color: #2e2e2e;
-  margin-bottom: 15px;
   padding: 10px;
   font-weight: 500;
   transition: 0.3s;
+  margin-right: 6px;
+  margin-bottom: 6px;
 }
 
 .portfolio .badge:hover {
@@ -961,6 +974,11 @@ section,
   transition: 0.3s;
   font-weight: 500;
 }
+
+.portfolio .portfolio-details .findOut-link {
+  margin-top: 20px;
+}
+
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
@@ -980,6 +998,7 @@ section,
   overflow: hidden;
   display: -webkit-box;
   margin-right: 20px;
+  transition: 0.5s;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -998,9 +1017,9 @@ section,
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-item .portfolio-details .details-link {
-  right: 14px;
+.portfolio .portfolio-item .portfolio-details a {
   font-size: 16px;
+  position: relative;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -1053,6 +1072,20 @@ section,
   font-size: 16px;
   font-weight: 300;
   color: #8a8a8a;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.portfolio .testimonial-item .link {
+  padding: 0 0 15px 15px;
+}
+
+.portfolio .testimonial-item .desc a {
+  position: relative;
+  margin-top: 20px;
+  left: 30px;
 }
 
 .portfolio .swiper-wrapper {

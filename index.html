@@ -375,534 +375,174 @@
 
         <div class="dektop d-none d-lg-block">
           <div class="container">
-            <div class="row gy-4">
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="100"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/meta.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Meta Ads</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Meta Ads  -->
+            <div class="row gy-4" id="skills">
+              <!-- Desktop  -->
+              <script>
+                // Data untuk items
+                const serviceItems = [
+                  {
+                    imgSrc: "assets/img/skills/meta.webp",
+                    title: "Meta Ads",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/tiktok.webp",
+                    title: "TikTok Ads",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/google.webp",
+                    title: "Google Ads",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/analytic.webp",
+                    title: "Analytic",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/tagmanager.webp",
+                    title: "Tag Manager",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/searchconsole.svg",
+                    title: "Search Console",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/seo.webp",
+                    title: "SEO",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/ahref.webp",
+                    title: "Ahref",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/similiarweb.webp",
+                    title: "Similarweb",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/semrush.webp",
+                    title: "Semrush",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/wordpress.webp",
+                    title: "Wordpress",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/elementor.webp",
+                    title: "Elementor",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/html.webp",
+                    title: "HTML",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/CSS.webp",
+                    title: "CSS",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/javascript.webp",
+                    title: "Javascript",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/bootstraap.webp",
+                    title: "Bootstrap UI",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/vue.webp",
+                    title: "Vue JS",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/php.webp",
+                    title: "PHP",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/laravel.webp",
+                    title: "Laravel",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/vscode.webp",
+                    title: "VS Code",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/figma.webp",
+                    title: "Figma",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/freepik.webp",
+                    title: "Freepik",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/photoshop.webp",
+                    title: "Adobe Photoshop",
+                    link: "javascript:void(0);",
+                  },
+                  {
+                    imgSrc: "assets/img/skills/premierpro.webp",
+                    title: "Adobe Premier Pro",
+                    link: "javascript:void(0);",
+                  },
+                ];
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="200"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/tiktok.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Tiktok Ads</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Tiktok Ads -->
+                const serviceContainer = document.getElementById("skills");
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="300"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/google.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Google Ads</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Google Ads -->
+                serviceItems.forEach((item) => {
+                  const colDiv = document.createElement("div");
+                  colDiv.classList.add("col-lg-2", "col-md-6", "col-4");
+                  colDiv.setAttribute("data-aos", "fade-up");
+                  colDiv.setAttribute("data-aos-once", "false");
+                  colDiv.setAttribute("data-aos-delay", "100");
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="400"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/analytic.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Analytics</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Google Analytics -->
+                  const serviceItemDiv = document.createElement("div");
+                  serviceItemDiv.classList.add("service-item");
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="500"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/tagmanager.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Tag Manager</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Tag Manager -->
+                  const iconDiv = document.createElement("div");
+                  iconDiv.classList.add("icon");
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="600"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/searchconsole.svg"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Search Console</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Search Console -->
+                  const img = document.createElement("img");
+                  img.src = item.imgSrc;
+                  img.classList.add("img-fluid");
+                  img.title = "mfr-portfolio";
+                  img.alt = "mfr-portfolio-img";
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="700"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/seo.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>SEO</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- SEO -->
+                  iconDiv.appendChild(img);
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="800"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/ahref.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Ahref</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Ahref -->
+                  const a = document.createElement("a");
+                  a.href = item.link;
+                  a.title = "mfr-portfolio-link";
+                  a.classList.add("stretched-link");
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="900"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/similiarweb.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Similiarweb</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Similiarweb -->
+                  const h3 = document.createElement("h3");
+                  h3.textContent = item.title;
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1000"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/semrush.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Semrush</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Semrush -->
+                  a.appendChild(h3);
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1200"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/wordpress.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Wordpress</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Wordpress -->
+                  serviceItemDiv.appendChild(iconDiv);
+                  serviceItemDiv.appendChild(a);
+                  colDiv.appendChild(serviceItemDiv);
 
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1300"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/elementor.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Elementor</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Elementor -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1400"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/html.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>HTML</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- HTML -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1500"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/css.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>CSS</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- CSS -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1600"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/javascript.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Javascript</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Javascript -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1700"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/bootstraap.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Bootstrap UI</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Bootstrap -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1800"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/vue.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Vue JS</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Vue JS -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="1900"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/php.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>PHP</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- PHP -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="2000"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/laravel.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Laravel</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Laravel -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="2100"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/vscode.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Visual Studio Code</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- VS Code -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="2200"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/figma.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Figma</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Figma -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="2300"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/freepik.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Freepik</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Freepik -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="2400"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/photoshop.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Adobe Photoshop</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Photoshop -->
-
-              <div
-                class="col-lg-2 col-md-6 col-4"
-                data-aos="fade-up"
-                data-aos-once="false"
-                data-aos-delay="2500"
-              >
-                <div class="service-item">
-                  <div class="icon">
-                    <img
-                      src="assets/img/skills/premierpro.webp"
-                      class="img-fluid"
-                      title="mfr-portfolio"
-                      alt="mfr-portfolio-img"
-                    />
-                  </div>
-                  <a title="mfr-portfolio-link" class="stretched-link">
-                    <h3>Adobe Premier Pro</h3>
-                  </a>
-                </div>
-              </div>
-              <!-- Premier Pro -->
+                  serviceContainer.appendChild(colDiv);
+                });
+              </script>
+              <!-- Desktop  -->
             </div>
           </div>
         </div>
@@ -917,422 +557,51 @@
           >
             <div class="swiper init-swiper">
               <div class="services-slider">
-                <div class="swiper-wrapper">
-                  <!-- Slider -->
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/meta.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link">
-                        <h3>Meta Ads</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- meta ads -->
+                <div class="swiper-wrapper" id="services-slider">
+                  <script>
+                    const swiperContainer =
+                      document.getElementById("services-slider");
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/tiktok.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link">
-                        <h3>Tiktok Ads</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- tiktok ads -->
+                    serviceItems.forEach((item) => {
+                      const swiperSlideDiv = document.createElement("div");
+                      swiperSlideDiv.classList.add("swiper-slide");
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/google.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Google Ads</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- google ads -->
+                      const serviceItemDiv = document.createElement("div");
+                      serviceItemDiv.classList.add("service-item");
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/analytic.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Analytics</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- google Analytics -->
+                      const iconDiv = document.createElement("div");
+                      iconDiv.classList.add("icon");
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/tagmanager.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Tag Manager</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- google tag Manager -->
+                      const img = document.createElement("img");
+                      img.src = item.imgSrc;
+                      img.classList.add("img-fluid");
+                      img.title = "mfr-portfolio";
+                      img.alt = "mfr-portfolio-img";
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/searchconsole.svg"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Search Console</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- google Search Console -->
+                      iconDiv.appendChild(img);
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/seo.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>SEO</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- SEO -->
+                      const a = document.createElement("a");
+                      a.href = item.link;
+                      a.title = "mfr-portfolio-link";
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/ahref.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Ahref</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Ahref -->
+                      const h3 = document.createElement("h3");
+                      h3.textContent = item.title;
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/similiarweb.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Similiarweb</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- similar web -->
+                      a.appendChild(h3);
 
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/semrush.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Semrush</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Semrush  -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/wordpress.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Wordpress</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Wordpress -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/elementor.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Elementor</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Elementor -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/html.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>HTML</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- HTML -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/css.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>CSS</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- CSS -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/javascript.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Javascript</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- JS -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/bootstraap.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Bootstrap UI</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Bootstrap -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/vue.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Vue JS</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Vue JS -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/php.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>PHP</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- PHP -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/laravel.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Laravel</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Laravel -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/vscode.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Visual Studio Code</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- VS Code -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/figma.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Figma</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Figma -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/freepik.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Freepik</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Figma -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/photoshop.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Adobe Photoshop</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Photoshop -->
-
-                  <div class="swiper-slide">
-                    <div class="service-item">
-                      <div class="icon">
-                        <img
-                          src="assets/img/skills/premierpro.webp"
-                          class="img-fluid"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <a title="mfr-portfolio-link" class="stretched-link">
-                        <h3>Adobe Premier Pro</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Premier Pro -->
+                      serviceItemDiv.appendChild(iconDiv);
+                      serviceItemDiv.appendChild(a);
+                      swiperSlideDiv.appendChild(serviceItemDiv);
+                      swiperContainer.appendChild(swiperSlideDiv);
+                    });
+                  </script>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Mobile Version -->
       </section>
-      <!-- Mobile Version -->
 
       <section id="portfolio" class="portfolio section">
         <div
@@ -1343,7 +612,7 @@
           <h2>Portfolio 💻</h2>
         </div>
         <div class="responsive-mobile d-none d-lg-block">
-          <div class="container-fluid">
+          <div class="container">
             <div
               class="isotope-layout"
               data-default-filter="*"
@@ -1355,904 +624,321 @@
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <li data-filter="*" class="filter-active">All Portfolio</li>
-                <li data-filter=".filter-dm">Digital Marketing</li>
-                <li data-filter=".filter-wb">Website Development</li>
+                <li
+                  data-filter="*"
+                  class="filter-active"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-once="false"
+                >
+                  All Portfolio
+                </li>
+                <li
+                  data-filter=".filter-dm"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-once="false"
+                >
+                  Digital Marketing
+                </li>
+                <li
+                  data-filter=".filter-wb"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-once="false"
+                >
+                  Website Development
+                </li>
               </ul>
               <!-- End Portfolio Filters -->
-
               <div
                 class="row gy-4 isotope-container"
                 data-aos="fade-up"
                 data-aos-once="false"
+                id="portfolio-desktop"
               >
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm filter-wb"
-                >
-                  <div
-                    id="ouzen"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/ouzen colus/ouzen1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colus/ouzen2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colus/ouzen3.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colus/ouzen6.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colus/1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#ouzen"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                <script>
+                  // Data untuk portfolio items
+                  const portfolioItems = [
+                    {
+                      title: "Colusmen",
+                      desc: "Colusmen health brand from Ouzenmart which is popular among men and young people, the meta ads platform is the best thing for creating online advertising",
+                      images: [
+                        "assets/img/portfolio/ouzen-colus/ouzen1.webp",
+                        "assets/img/portfolio/ouzen-colus/ouzen2.webp",
+                        "assets/img/portfolio/ouzen-colus/ouzen3.webp",
+                        "assets/img/portfolio/ouzen-colus/ouzen6.webp",
+                        "assets/img/portfolio/ouzen-colus/1.webp",
+                      ],
+                      badges: ["Meta Ads", "Tiktok Ads", "Web Landing Page"],
+                      link: "https://mfadhlillahrasyid.github.io/colus-essence/",
+                      filter: ["filter-dm", "filter-wb"],
+                    },
+                    {
+                      title: "Coliskin",
+                      desc: "Coliskin is a beauty brand from Ouzenmart which is popular among women and young people, digital platforms are the best thing for creating online advertising",
+                      images: [
+                        "assets/img/portfolio/ouzen-colis/ouzen4.webp",
+                        "assets/img/portfolio/ouzen-colis/ouzen5.webp",
+                        "assets/img/portfolio/ouzen-colis/ouzen6.webp",
+                        "assets/img/portfolio/ouzen-colis/1.webp",
+                      ],
+                      badges: ["Tiktok Ads", "Web Landing Page", "Branding"],
+                      link: "https://mfadhlillahrasyid.github.io/colis-birdnes/",
+                      filter: ["filter-dm", "filter-wb"],
+                    },
+                    {
+                      title: "Zelou Parfume",
+                      desc: "Zelou Parfume is a local perfume product, with elements that emphasize brand positioning. So to get the landing page concept we had to adapt the theme of the Zelou Parfume brand",
+                      images: ["assets/img/portfolio/zelou.webp"],
+                      badges: ["Web Landing Page"],
+                      link: "https://mfadhlillahrasyid.github.io/zelou-fragrance/",
+                      filter: ["filter-wb"],
+                    },
+                    {
+                      title: "Mandiri Abadi Sejahtera",
+                      desc: "Marisi Abadi Sejahtera is a herbal medicine distributor company, its unique visual style gives this brand an old school but modern website style. for us to adapt the concept using the wordpress platform",
+                      images: ["assets/img/portfolio/masgroup.webp"],
+                      badges: ["Web Company Profile"],
+                      link: "https://mandiriabadisejahtera.com/",
+                      filter: ["filter-wb"],
+                    },
+                    {
+                      title: "TwoDesign25",
+                      desc: "twodesign25 is a creative agency that provides architectural services for consumer needs, with a simple concept but can make consumers interested. We apply websites using standard-based standards, namely HTML, CSS and JavaScript.",
+                      images: ["assets/img/portfolio/twodesign25.webp"],
+                      badges: ["Web Landing Page"],
+                      link: "https://mfadhlillahrasyid.github.io/twodesign25-landing-page",
+                      filter: ["filter-wb"],
+                    },
+                    {
+                      title: "Leslim Store",
+                      desc: "Leslim is a local brand that provides seamless sports clothing specifically for women, helps sales using the meta ads platform, and slightly modifies the landing page to get a solid website score",
+                      images: [
+                        "assets/img/portfolio/leslim/leslim.webp",
+                        "assets/img/portfolio/leslim/leslim1.webp",
+                        "assets/img/portfolio/leslim/leslim2.webp",
+                      ],
+                      badges: ["Meta Ads", "Branding", "Web Landing Page"],
+                      link: "https://leslimstore.com/promo/",
+                      filter: ["filter-dm", "filter-wb"],
+                    },
+                    {
+                      title: "Art Developer",
+                      desc: "Art Developer is a creative agency that provides digital marketing services, with a dark and green theme, combining modern concepts for website design and minimalism",
+                      images: ["assets/img/portfolio/artdev.webp"],
+                      badges: ["Web Company Profile"],
+                      link: "https://mfadhlillahrasyid.github.io/art-developer/",
+                      filter: ["filter-wb"],
+                    },
+                    {
+                      title: "Creative Youth Vision",
+                      desc: "Creative Youth Vision is a company that provides women's sportswear, especially seamless bras and others. Apart from that, the CYV group has other superior products",
+                      images: [
+                        "assets/img/portfolio/cyv/1.webp",
+                        "assets/img/portfolio/cyv/2.webp",
+                        "assets/img/portfolio/cyv/3.webp",
+                        "assets/img/portfolio/cyv/4.webp",
+                      ],
+                      badges: ["Tiktok Ads", "Branding"],
+                      link: "https://www.instagram.com/comfiwear/",
+                      filter: ["filter-dm"],
+                    },
+                    {
+                      title: "Smartvision",
+                      desc: "Smartvision is part of the MOC brand, Smart Vision is an eye vitamin with the best herbal formulation to help prevent and reduce nearsightedness and astigmatism",
+                      images: [
+                        "assets/img/portfolio/moc/moc1.webp",
+                        "assets/img/portfolio/moc/moc2.webp",
+                        "assets/img/portfolio/moc/moc3.webp",
+                      ],
+                      badges: ["Meta Ads", "Web Landing Page"],
+                      link: "https://smartvisionofficial.com/",
+                      filter: ["filter-dm", "filter-wb"],
+                    },
+                    {
+                      title: "Miloveskin",
+                      desc: "Miloveskin is part of the MOC brand, Miloveskin is an organic mask product that is very popular with young people",
+                      images: ["assets/img/portfolio/moc/miloveskin.webp"],
+                      badges: ["Meta Ads"],
+                      link: "https://www.instagram.com/miloveskinofficial/",
+                      filter: ["filter-dm"],
+                    },
+                    {
+                      title: "Foeyu",
+                      desc: "Feoyu is an internal brand from Qubicball. The difficulty in building a brand from Foeyu is the lack of brand awareness and brand identity",
+                      images: [
+                        "assets/img/portfolio/qb/foeyu.webp",
+                        "assets/img/portfolio/qb/foeyu2.webp",
+                        "assets/img/portfolio/qb/foeyu-web.webp",
+                      ],
+                      badges: ["Meta Ads", "SEM", "Web Landing Page"],
+                      link: "https://foeyu.vercel.app/",
+                      filter: ["filter-dm", "filter-wb"],
+                    },
+                    {
+                      title: "Qubicball",
+                      desc: "Qubicball is a creative agency that provides digital marketing services, founded in 2015, Qubicball already has dozens of partner",
+                      images: [
+                        "assets/img/portfolio/qb/qubicball.webp",
+                        "assets/img/portfolio/qb/qubicball2.webp",
+                        "assets/img/portfolio/qb/qubicball3.webp",
+                        "assets/img/portfolio/qb/qubicball-web.webp",
+                      ],
+                      badges: ["Meta Ads", "SEM", "SEO", "Web Company Profile"],
+                      link: "https://qubicball.com/",
+                      filter: ["filter-dm", "filter-wb"],
+                    },
+                    {
+                      title: "Kiyonest",
+                      desc: "Kiyonest is a swallow's nest health drink brand that is currently hype. Kiyonest is already well-known but still needs a responsive and dynamic website",
+                      images: [
+                        "assets/img/portfolio/kiyonest/1.webp",
+                        "assets/img/portfolio/kiyonest/2.webp",
+                      ],
+                      badges: ["Web Landing Page", "Sales System"],
+                      link: "https://mfadhlillahrasyid.github.io/kiyonest/",
+                      filter: ["filter-wb"],
+                    },
+                    {
+                      title: "Go Installs",
+                      desc: "PT Goto Install Indonesia is the first and only application company that provides services to bring together sellers, buyers and installers.",
+                      images: [
+                        "assets/img/portfolio/goinstalls/go1.webp",
+                        "assets/img/portfolio/goinstalls/go2.webp",
+                      ],
+                      badges: ["Web Company Profile", "SEO"],
+                      link: "https://goinstalls/",
+                      filter: ["filter-wb"],
+                    },
+                    // Tambahkan data portfolio lainnya di sini
+                  ];
+
+                  // Ambil container untuk portfolio items
+                  const portfolioContainer =
+                    document.getElementById("portfolio-desktop");
+
+                  // Looping data dengan forEach
+                  portfolioItems.forEach((item, index) => {
+                    // Membuat elemen col
+                    const colDiv = document.createElement("div");
+                    colDiv.classList.add(
+                      "col-lg-4",
+                      "col-md-6",
+                      "portfolio-item",
+                      "isotope-item"
+                    );
+
+                    if (Array.isArray(item.filter)) {
+                      item.filter.forEach((filterClass) => {
+                        colDiv.classList.add(filterClass);
+                      });
+                    } else {
+                      // Jika filter bukan array, tambahkan langsung
+                      colDiv.classList.add(item.filter);
+                    }
+
+                    // Portfolio Details Class
+                    const detailsDiv = document.createElement("div");
+                    detailsDiv.classList.add("portfolio-details");
+
+                    // Membuat carousel container
+                    const carouselDiv = document.createElement("div");
+                    const carouselId = `carousel${index}`; // ID unik untuk tiap carousel
+                    carouselDiv.classList.add(
+                      "carousel",
+                      "slide",
+                      "carousel-fade"
+                    );
+                    carouselDiv.id = carouselId;
+                    carouselDiv.setAttribute("data-bs-ride", "carousel");
+
+                    const carouselInner = document.createElement("div");
+                    carouselInner.classList.add("carousel-inner");
+
+                    // Looping gambar untuk carousel
+                    item.images.forEach((imageSrc, imgIndex) => {
+                      const carouselItem = document.createElement("div");
+                      carouselItem.classList.add("carousel-item");
+                      if (imgIndex === 0) {
+                        carouselItem.classList.add("active");
+                      }
+
+                      const img = document.createElement("img");
+                      img.src = imageSrc;
+                      img.classList.add("img-fluid", "d-block", "w-100");
+                      img.title = "mfr-portfolio";
+                      img.alt = "mfr-portfolio-img";
+
+                      carouselItem.appendChild(img);
+                      carouselInner.appendChild(carouselItem);
+                    });
+
+                    // Carousel buttons
+                    const prevButton = document.createElement("button");
+                    prevButton.classList.add("carousel-control-prev");
+                    prevButton.setAttribute("type", "button");
+                    prevButton.setAttribute("data-bs-target", `#${carouselId}`);
+                    prevButton.setAttribute("data-bs-slide", "prev");
+                    prevButton.innerHTML = `
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#ouzen"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                    `;
+
+                    const nextButton = document.createElement("button");
+                    nextButton.classList.add("carousel-control-next");
+                    nextButton.setAttribute("type", "button");
+                    nextButton.setAttribute("data-bs-target", `#${carouselId}`);
+                    nextButton.setAttribute("data-bs-slide", "next");
+                    nextButton.innerHTML = `
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Colusmen</h4>
-                    <p>
-                      Colusmen health brand from Ouzenmart which is popular
-                      among men and young people, the meta ads platform is the
-                      best thing for creating online advertising
-                    </p>
-                    <span class="badge">Meta Ads</span>
-                    <span class="badge">Tiktok Ads</span>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://mfadhlillahrasyid.github.io/colus-essence/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- Colusmen -->
+                    `;
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm filter-wb"
-                >
-                  <div
-                    id="ouzenColis"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/ouzen colis/ouzen4.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colis/ouzen5.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colis/ouzen6.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colis/1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#ouzenColis"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#ouzenColis"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Coliskin</h4>
-                    <p>
-                      Coliskin is a beauty brand from Ouzenmart which is popular
-                      among women and young people, digital platforms are the
-                      best thing for creating online advertising
-                    </p>
-                    <span class="badge">Tiktok Ads</span>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://mfadhlillahrasyid.github.io/colis-birdnes/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- Coliskin -->
+                    // Menyusun elemen carousel
+                    carouselDiv.appendChild(carouselInner);
+                    carouselDiv.appendChild(prevButton);
+                    carouselDiv.appendChild(nextButton);
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb"
-                >
-                  <img
-                    src="assets/img/portfolio/zelou.webp"
-                    class="img-fluid"
-                    title="mfr-portfolio"
-                    alt="mfr-portfolio-img"
-                  />
-                  <div class="portfolio-details">
-                    <h4>Zelou Fragrance</h4>
-                    <p>
-                      Zelou Parfume is a local perfume product, with elements
-                      that emphasize brand positioning. So to get the landing
-                      page concept we had to adapt the theme of the Zelou
-                      Parfume brand
-                    </p>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://mfadhlillahrasyid.github.io/zelou-fragrance/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- Zelou Parfume -->
+                    // Title
+                    const h4 = document.createElement("h4");
+                    h4.textContent = item.title;
+                    detailsDiv.appendChild(h4);
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb"
-                >
-                  <img
-                    src="assets/img/portfolio/masgroup.webp"
-                    class="img-fluid"
-                    title="mfr-portfolio"
-                    alt="mfr-portfolio-img"
-                  />
-                  <div class="portfolio-details">
-                    <h4>Marisi Abadi Sejahtera</h4>
-                    <p>
-                      Marisi Abadi Sejahtera is a herbal medicine distributor
-                      company, its unique visual style gives this brand an old
-                      school but modern website style. for us to adapt the
-                      concept using the wordpress platform
-                    </p>
-                    <span class="badge">Website Development</span>
-                    <span class="badge">SEO</span>
-                    <a
-                      href="https://marisiabadisejahtera.com/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- MAS Grup -->
+                    // Description
+                    const p = document.createElement("p");
+                    p.textContent = item.desc;
+                    detailsDiv.appendChild(p);
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb"
-                >
-                  <img
-                    src="assets/img/portfolio/twodesign25.webp"
-                    class="img-fluid"
-                    title="mfr-portfolio"
-                    alt="mfr-portfolio-img"
-                  />
-                  <div class="portfolio-details">
-                    <h4>TwoDesign25</h4>
-                    <p>
-                      twodesign25 is a creative agency that provides
-                      architectural services for consumer needs, with a simple
-                      concept but can make consumers interested. We apply
-                      websites using standard-based standards, namely HTML, CSS
-                      and JavaScript.
-                    </p>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://mfadhlillahrasyid.github.io/twodesign25-landing-page/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- twodesign25 -->
+                    //  Badges
+                    item.badges.forEach((badgeText) => {
+                      const badgeSpan = document.createElement("span");
+                      badgeSpan.classList.add("badge");
+                      badgeSpan.textContent = badgeText;
+                      detailsDiv.appendChild(badgeSpan);
+                    });
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb filter-dm"
-                >
-                  <div
-                    id="leslim"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/leslim/leslim.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/ouzen colus/ouzen1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/leslim/leslim2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#leslim"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#leslim"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Leslim Store</h4>
-                    <p>
-                      Leslim is a local brand that provides seamless sports
-                      clothing specifically for women, helps sales using the
-                      meta ads platform, and slightly modifies the landing page
-                      to get a solid website score
-                    </p>
-                    <span class="badge">Meta Ads</span>
-                    <span class="badge">Branding</span>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://leslimstore.com/promo/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- leslim -->
+                    // Details Link
+                    const divLink = document.createElement("div");
+                    divLink.classList.add("findOut-link");
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb"
-                >
-                  <img
-                    src="assets/img/portfolio/artdev.webp"
-                    class="img-fluid"
-                    title="mfr-portfolio"
-                    alt="mfr-portfolio-img"
-                  />
-                  <div class="portfolio-details">
-                    <h4>Art Developer Agency</h4>
-                    <p>
-                      art developer is a creative agency that provides digital
-                      marketing services, with a dark and green theme, combining
-                      modern concepts for website design and minimalism
-                    </p>
-                    <span class="badge">Web Development</span>
-                    <span class="badge">SEO</span>
-                    <a
-                      href="https://mfadhlillahrasyid.github.io/art-developer/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- artdev -->
+                    const a = document.createElement("a");
+                    a.href = item.link;
+                    a.title = "mfr-portfolio-find-out";
+                    a.classList.add("details-link");
+                    a.target = "_blank";
+                    a.innerHTML = "Find Out More &raquo;";
+                    divLink.appendChild(a);
+                    detailsDiv.appendChild(divLink);
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm"
-                >
-                  <div
-                    id="cyvgroup"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/cyv/1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/cyv/2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/cyv/3.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/cyv/4.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#cyvgroup"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#cyvgroup"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Creative Youth Vision</h4>
-                    <p>
-                      Creative Youth Vision is a company that provides women's
-                      sportswear, especially seamless bras and others. Apart
-                      from that, the CYV group has other superior products
-                    </p>
-                    <span class="badge">Tiktok Ads</span>
-                    <span class="badge">Branding</span>
-                    <a
-                      href="https://www.instagram.com/comfiwear/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- CYV Group -->
+                    // Menyusun elemen col
+                    colDiv.appendChild(carouselDiv); // Carousel di bawah details
+                    colDiv.appendChild(detailsDiv); // Mulai dengan details
 
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm filter-wb"
-                >
-                  <div
-                    id="moc"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/MOC/moc1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/MOC/moc2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/MOC/moc3.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#moc"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#moc"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Smartvision</h4>
-                    <p>
-                      Smartvision is part of the MOC brand, Smartvision is a
-                      supplement to correct myopic eyes
-                    </p>
-                    <span class="badge">Meta Ads</span>
-                    <span class="badge">Branding</span>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://smartvisionofficial.com/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- MOC smartvision -->
-
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm"
-                >
-                  <img
-                    src="assets/img/portfolio/MOC/miloveskin.webp"
-                    class="img-fluid"
-                    title="mfr-portfolio"
-                    alt="mfr-portfolio-img"
-                  />
-                  <div class="portfolio-details">
-                    <h4>Miloveskin</h4>
-                    <p>
-                      Miloveskin is part of the MOC brand, Miloveskin is an
-                      organic mask product that is very popular with young
-                      people
-                    </p>
-                    <span class="badge">Meta Ads</span>
-                    <span class="badge">Branding</span>
-                    <a
-                      href="https://www.instagram.com/miloveskinofficial/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- MOC miloveskin -->
-
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm filter-wb"
-                >
-                  <div
-                    id="foeyu"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/qb/foeyu.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/qb/qubicball3.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/qb/foeyu-web.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#foeyu"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#foeyu"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Foeyu Eye Serum</h4>
-                    <p>
-                      Feoyu is an internal brand from Qubicball. The difficulty
-                      in building a brand from Foeyu is the lack of brand
-                      awareness and brand identity
-                    </p>
-                    <span class="badge">Meta Ads</span>
-                    <span class="badge">Google Ads</span>
-                    <span class="badge">Web Landing Page</span>
-                    <a
-                      href="https://foeyu.verce.app/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- Foeyu SEM -->
-
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-dm filter-wb"
-                >
-                  <div
-                    id="qubicball"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/qb/qubicball-web.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/qb/qubicball.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/qb/qubicball2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/qb/qubicball4.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio-img"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#qubicball"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#qubicball"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Qubicball Agency</h4>
-                    <p>
-                      Qubicball is a creative agency that provides digital
-                      marketing services, founded in 2015, Qubicball already has
-                      dozens of partners
-                    </p>
-                    <span class="badge">Meta Ads</span>
-                    <span class="badge">SEO</span>
-                    <span class="badge">Google Ads</span>
-                    <span class="badge">Web Development</span>
-                    <a
-                      href="https://qubicball.com/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- Qubicball -->
-
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb"
-                >
-                  <div
-                    id="kiyonest"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/kiyonest/1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/kiyonest/2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#kiyonest"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#kiyonest"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Kiyonest</h4>
-                    <p>
-                      Kiyonest is a swallow's nest health drink brand that is
-                      currently hype. Kiyonest is already well-known but still
-                      needs a responsive and dynamic website.
-                    </p>
-                    <span class="badge">Web App Development</span>
-                    <span class="badge">SEO</span>
-                    <a
-                      href="https://mfadhlillahrasyid.github.io/kiyonest/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- kiyonest -->
-
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-wb"
-                >
-                  <div
-                    id="go"
-                    class="carousel slide carousel-fade"
-                    data-bs-ride="carousel"
-                  >
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/img/portfolio/goinstalls/go1.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/img/portfolio/goinstalls/go2.webp"
-                          class="img-fluid d-block w-100"
-                          title="mfr-portfolio"
-                          alt="mfr-portfolio"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#go"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#go"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <div class="portfolio-details">
-                    <h4>Go Installs</h4>
-                    <p>
-                      PT Goto Install Indonesia is the first and only
-                      application company that provides services to bring
-                      together sellers, buyers and installers.
-                    </p>
-                    <span class="badge">Web Development</span>
-                    <span class="badge">SEO</span>
-                    <a
-                      href="https://goinstalls.com/"
-                      title="ouzen-mfr-portfolio"
-                      class="details-link"
-                      target="_blank"
-                      ><br />Find Out More &raquo;</a
-                    >
-                  </div>
-                </div>
-                <!-- Go Install -->
+                    // Menambahkan ke dalam portfolio container
+                    portfolioContainer.appendChild(colDiv);
+                  });
+                </script>
               </div>
               <!-- End Portfolio Container -->
             </div>
@@ -2269,705 +955,134 @@
           >
             <div class="swiper init-swiper">
               <div class="testimonials-slider">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="portfolio-mobile">
                   <!-- Item Portfolio -->
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="ouzen-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/ouzen colus/ouzen1.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/ouzen colus/ouzen2.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/ouzen colus/ouzen3.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/ouzen colus/ouzen6.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#ouzen-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#ouzen-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>Ouzenmart Colus</h3>
-                        <h4>Meta & Tiktok Ads</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://shopee.co.id/colusmenofficial"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Ouzen Colus -->
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="ouzenColis-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/ouzen colis/ouzen4.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/ouzen colis/ouzen5.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/ouzen colis/ouzen6.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#ouzenColis-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#ouzenColis-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>Ouzenmart Colis</h3>
-                        <h4>Tiktok Ads</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://shopee.co.id/colisbeauteofficial"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Ouzen Colis -->
+                  <script>
+                    // Pilih elemen container di HTML yang akan menampung slide
+                    const container =
+                      document.getElementById("portfolio-mobile");
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img
-                        src="assets/img/portfolio/zelou.webp"
-                        class="img-fluid"
-                        title="mfr-portfolio"
-                        alt="mfr-portfolio-img"
-                      />
-                      <div class="desc mt-2">
-                        <h3>Zelou Fragrance</h3>
-                        <h4>Web Landing Page</h4>
-                        <a title="mfr-portfolio-link" href="" target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- zelou -->
+                    portfolioItems.forEach((item, index) => {
+                      // Membuat div untuk setiap slide
+                      const slideDiv = document.createElement("div");
+                      slideDiv.classList.add("swiper-slide");
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img
-                        src="assets/img/portfolio/masgroup.webp"
-                        class="img-fluid"
-                        title="mfr-portfolio"
-                        alt="mfr-portfolio-img"
-                      />
-                      <div class="desc mt-2">
-                        <h3>PT MAS Group</h3>
-                        <h4>Web Development</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://www.marisiabadisejahtera.com/"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- MAS Group -->
+                      // Membuat testimonial-item div
+                      const testimonialItem = document.createElement("div");
+                      testimonialItem.classList.add("testimonial-item");
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img
-                        src="assets/img/portfolio/twodesign25.webp"
-                        class="img-fluid"
-                        title="mfr-portfolio"
-                        alt="mfr-portfolio-img"
-                      />
-                      <div class="desc mt-2">
-                        <h3>TwoDesign25</h3>
-                        <h4>Web Landing Page</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://mfadhlillahrasyid.github.io/twodesign25-landing-page/"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- twodesign25 -->
+                      // Membuat carousel
+                      const carouselDiv = document.createElement("div");
+                      carouselDiv.id = `ouzen-slider-${index}`; // Unique ID untuk setiap slider
+                      carouselDiv.classList.add(
+                        "carousel",
+                        "slide",
+                        "carousel-fade"
+                      );
+                      carouselDiv.setAttribute("data-bs-ride", "carousel");
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="leslim-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/leslim/leslim.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/ouzen colus/ouzen1.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/leslim/leslim2.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#leslim-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#leslim-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                      // Membuat carousel-inner
+                      const carouselInner = document.createElement("div");
+                      carouselInner.classList.add("carousel-inner");
 
-                      <div class="desc mt-2">
-                        <h3>Leslim Store</h3>
-                        <h4>Advertising & Branding</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://leslimstore.com/promo/"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- MBD -->
+                      // Perulangan untuk setiap gambar
+                      item.images.forEach((imageSrc, imgIndex) => {
+                        const carouselItem = document.createElement("div");
+                        carouselItem.classList.add("carousel-item");
+                        if (imgIndex === 0) {
+                          carouselItem.classList.add("active"); // Gambar pertama ditetapkan aktif
+                        }
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img
-                        src="assets/img/portfolio/artdev.webp"
-                        class="img-fluid"
-                        title="mfr-portfolio"
-                        alt="mfr-portfolio-img"
-                      />
-                      <div class="desc mt-2">
-                        <h3>Art Developer Agency</h3>
-                        <h4>Web Development</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://mfadhlillahrasyid.github.io/art-developer/"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- ArtDev -->
+                        const img = document.createElement("img");
+                        img.src = imageSrc;
+                        img.classList.add("img-fluid", "d-block", "w-100");
+                        img.alt = "mfr-portfolio-img";
+                        img.title = "mfr-portfolio";
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="cyvgroup-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/cyv/1.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/cyv/2.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/cyv/3.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/cyv/4.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#cyvgroup-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#cyvgroup-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>CYV Group</h3>
-                        <h4>Tiktok Ads & Branding</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://www.instagram.com/comfiwear/?hl=en"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- cyvgroup -->
+                        // Tambahkan gambar ke carousel item
+                        carouselItem.appendChild(img);
+                        carouselInner.appendChild(carouselItem);
+                      });
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="foeyu-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/qb/foeyu.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/qb/qubicball3.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio-img"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#foeyu-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#foeyu-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>Foeyu</h3>
-                        <h4>Meta Ads & Google SEM</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://foeyu.vercel.app"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Foeyu -->
+                      // Membuat tombol prev dan next
+                      const prevButton = document.createElement("button");
+                      prevButton.classList.add("carousel-control-prev");
+                      prevButton.type = "button";
+                      prevButton.setAttribute(
+                        "data-bs-target",
+                        `#ouzen-slider-${index}`
+                      );
+                      prevButton.setAttribute("data-bs-slide", "prev");
+                      prevButton.innerHTML = `
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  `;
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img
-                        src="assets/img/portfolio/qb/foeyu-web.webp"
-                        class="img-fluid"
-                        title="mfr-portfolio"
-                        alt="mfr-portfolio-img"
-                      />
-                      <div class="desc mt-2">
-                        <h3>Foeyu Landing Page</h3>
-                        <h4>Web Landing Page</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://foeyu.vercel.app"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Foeyu Web -->
+                      const nextButton = document.createElement("button");
+                      nextButton.classList.add("carousel-control-next");
+                      nextButton.type = "button";
+                      nextButton.setAttribute(
+                        "data-bs-target",
+                        `#ouzen-slider-${index}`
+                      );
+                      nextButton.setAttribute("data-bs-slide", "next");
+                      nextButton.innerHTML = `
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  `;
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img
-                        src="assets/img/portfolio/qb/qubicball-web.webp"
-                        class="img-fluid"
-                        title="mfr-portfolio"
-                        alt="mfr-portfolio-img"
-                      />
-                      <div class="desc mt-2">
-                        <h3>Qubicball</h3>
-                        <h4>Web Development</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://qubicball.com"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Qubicball Web -->
+                      // Tambahkan carousel-inner, prevButton, nextButton ke carouselDiv
+                      carouselDiv.appendChild(carouselInner);
+                      carouselDiv.appendChild(prevButton);
+                      carouselDiv.appendChild(nextButton);
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="qubicball-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/qb/qubicball.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/qb/qubicball2.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/qb/qubicball4.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#qubicball-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#qubicball-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>Qubicball Agency</h3>
-                        <h4>SEM, SEO & Meta Ads</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://qubicball.com"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- qubicball -->
+                      // Buat elemen untuk deskripsi dan badges
+                      const descDiv = document.createElement("div");
+                      descDiv.classList.add("desc", "mt-2");
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="kiyonest-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/kiyonest/1.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/kiyonest/2.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#kiyonest-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#kiyonest-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>Kiyonest</h3>
-                        <h4>Web System Development</h4>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://mfadhlillahrasyid.github.io/kiyonest/"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Kiyonest -->
+                      const h3 = document.createElement("h3");
+                      h3.textContent = item.title;
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div
-                        id="go-slider"
-                        class="carousel slide carousel-fade"
-                        data-bs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img
-                              src="assets/img/portfolio/kiyonest/1.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/img/portfolio/kiyonest/2.webp"
-                              class="img-fluid d-block w-100"
-                              title="mfr-portfolio"
-                              alt="mfr-portfolio"
-                            />
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-bs-target="#go-slider"
-                          data-bs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-bs-target="#go-slider"
-                          data-bs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="desc mt-2">
-                        <h3>Go Installs</h3>
-                        <span class="badge">Search Engine Optimization</span>
-                        <a
-                          title="mfr-portfolio-link"
-                          href="https://goinstalls.com"
-                          target="_blank"
-                          ><br />Cek Website &raquo;</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Goinstall -->
+                      const p = document.createElement("p");
+                      p.textContent = item.desc;
+
+                      descDiv.appendChild(h3);
+                      descDiv.appendChild(p);
+
+                      // Tambahkan badges
+                      item.badges.forEach((badge) => {
+                        const badgeSpan = document.createElement("span");
+                        badgeSpan.classList.add("badge");
+                        badgeSpan.textContent = badge;
+                        descDiv.appendChild(badgeSpan);
+                      });
+
+                      // Buat elemen untuk link
+                      const linkDiv = document.createElement("div");
+                      linkDiv.classList.add("link");
+
+                      const a = document.createElement("a");
+                      a.href = item.link;
+                      a.target = "_blank";
+                      a.classList.add("details-link");
+                      a.innerHTML = "Cek Website &raquo;";
+
+                      // Tambahkan link ke dalam linkDiv
+                      linkDiv.appendChild(a);
+
+                      // Gabungkan carousel, desc, dan link ke testimonialItem
+                      testimonialItem.appendChild(carouselDiv);
+                      testimonialItem.appendChild(descDiv);
+                      testimonialItem.appendChild(linkDiv);
+
+                      // Gabungkan testimonialItem ke slideDiv
+                      slideDiv.appendChild(testimonialItem);
+
+                      // Gabungkan slideDiv ke container utama
+                      container.appendChild(slideDiv);
+                    });
+                  </script>
                 </div>
               </div>
             </div>
