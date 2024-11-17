@@ -605,6 +605,10 @@ section,
 
   .hero .social-links a {
     font-size: 22px;
+    background-color: none;
+    margin: 8px;
+    padding: 0;
+    border-radius: 0;
   }
 }
 
