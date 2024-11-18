@@ -8,7 +8,11 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
+<<<<<<< HEAD
   --accent-color: #aeff00; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+=======
+  --accent-color: #ff7b00; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -16,11 +20,19 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #45505b; /* The default color of the main navmenu links */
+<<<<<<< HEAD
   --nav-hover-color: #aeff00; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #aeff00; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+=======
+  --nav-hover-color: #ff7b00; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ff7b00; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -59,13 +71,21 @@ body {
 }
 
 a {
+<<<<<<< HEAD
   color: #aeff00;
+=======
+  color: #ff7b00;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
+<<<<<<< HEAD
   color: color-mix(in srgb, #aeff00, transparent 25%);
+=======
+  color: color-mix(in srgb, #ff7b00, transparent 25%);
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   text-decoration: none;
 }
 
@@ -266,7 +286,11 @@ h6 {
 }
 
 .footer .social-links a:hover {
+<<<<<<< HEAD
   color: #aeff00;
+=======
+  color: #ff7b00;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
 }
 
 .footer .copyright {
@@ -295,7 +319,11 @@ h6 {
 
 .lumia:before {
   content: "";
+<<<<<<< HEAD
   background: color-mix(in srgb, var(--background-color), transparent 70%);
+=======
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -334,9 +362,15 @@ h6 {
   color: var(--contrast-color);
   background: linear-gradient(
     90deg,
+<<<<<<< HEAD
     rgb(85, 0, 221) 0%,
     rgb(109, 226, 0) 50%,
     rgb(255, 251, 0) 100%
+=======
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   );
   border: 0;
   padding: 20px 30px;
@@ -346,15 +380,24 @@ h6 {
   text-align: left;
   transform: scale(1.1);
   margin-top: 20px;
+<<<<<<< HEAD
   font-weight: 500;
+=======
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
 }
 
 .lumia .btn-get-started:active {
   background: linear-gradient(
     90deg,
+<<<<<<< HEAD
     rgb(66, 0, 173) 0%,
     rgb(91, 189, 0) 50%,
     rgb(202, 199, 0) 100%
+=======
+    rgb(111, 31, 165) 0%,
+    rgb(192, 19, 19) 50%,
+    rgb(190, 117, 14) 100%
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   );
 }
 
@@ -378,7 +421,11 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
+<<<<<<< HEAD
   background-color: #aeff00;
+=======
+  background-color: #ff7b00;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -387,12 +434,20 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
+<<<<<<< HEAD
   color: #212529;
+=======
+  color: var(--contrast-color);
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   line-height: 0;
 }
 
 .scroll-top:hover {
+<<<<<<< HEAD
   background-color: #89c900;
+=======
+  background-color: #b35600;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   color: var(--contrast-color);
 }
 
@@ -578,6 +633,7 @@ section,
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   line-height: 1;
+<<<<<<< HEAD
   margin: 2px;
   transition: 0.3s;
   background-color: #0606068c;
@@ -587,6 +643,14 @@ section,
 
 .hero .social-links a:hover {
   color: #aeff00;
+=======
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: #ff7b00;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
 }
 
 @media (max-width: 768px) {
@@ -605,10 +669,13 @@ section,
 
   .hero .social-links a {
     font-size: 22px;
+<<<<<<< HEAD
     background-color: none;
     margin: 8px;
     padding: 0;
     border-radius: 0;
+=======
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   }
 }
 
@@ -670,7 +737,11 @@ section,
 }
 
 .hero2 .social-links a:hover {
+<<<<<<< HEAD
   color: #aeff00;
+=======
+  color: #ff7b00;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
 }
 
 .hero2 .btn-cta .ask-me {
@@ -919,7 +990,11 @@ section,
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
+<<<<<<< HEAD
   color: #212529;
+=======
+  color: var(--contrast-color);
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -1307,7 +1382,11 @@ section,
 }
 
 .experience .service-item:hover {
+<<<<<<< HEAD
   border: 1px solid #8bcc00;
+=======
+  border: 1px solid #b35600;
+>>>>>>> 13ca24a623266215961fa79458aeaedae7a735aa
 }
 
 .experience .service-item .icon {
